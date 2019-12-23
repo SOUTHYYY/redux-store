@@ -12,7 +12,7 @@ const App = ({bookstoreService}) => {
   console.log(bookstoreService.getBooks() )
   return (
     <div className="App">
-      <Header numItems={3} total={200}/>
+      <Header total={200}/>
       <Switch>
         <Route path='/' component={HomePage} exact/>
         <Route path='/cart' component={CartPage}/>
